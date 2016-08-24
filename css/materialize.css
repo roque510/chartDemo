@@ -6326,5 +6326,28 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+.page-footeraa, body {
+  padding-left: 200px; }
+
+#burger {
+  display: none; }
+
+@media only screen and (max-width: 992px) {
+  .page-footeraa, body {
+    padding-left: 0; }
+
+  #burger {
+    display: block; } }
+#slide-out {
+  width: 200px; }
+
+.background {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto; }
+
+.userView {
+  color: black;
+  text-shadow: 0.1em 0.2em 0.1em solid grey; }
 
 /*# sourceMappingURL=materialize.css.map */

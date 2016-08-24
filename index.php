@@ -47,13 +47,19 @@ require_once('funciones.php');
   <script>
     var myChart = new Chart({...})
     var line = new Chart({...})
+    $("#woot").on("Click",function(e){
+    alert("hola");
+    
+});
   </script>
+  <script src="js/chart.js"></script>
   <script src="js/magic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
+
   
 
   </body>
-  <footer class="page-footer" style="bottom:0;">
+  
   <?php  modulo("footer"); ?>
-  </footer>
+  
 </html>
