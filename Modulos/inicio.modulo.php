@@ -1,4 +1,5 @@
-<div class="section no-pad-bot" id="index-banner">
+
+<div class="section no-pad-bot" id="index-banner" >
     <div class="container">
       <br><br>
       <h1 class="header center ">GRAFICOS</h1>

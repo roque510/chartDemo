@@ -31,3 +31,7 @@ $header-footer-padding : 200px;
 	color:black;
 	text-shadow:0.1em 0.2em 0.1em solid grey;
 }
+
+.controllerB{
+	 margin-left: - $header-footer-padding !important;
+}
