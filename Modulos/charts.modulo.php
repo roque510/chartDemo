@@ -134,23 +134,50 @@
 
     </div>
     <div id="test4" class="col s12">
+    	<div class="col s8">
+    		<div id="container" >
+			
+		        <canvas id="linear"></canvas>
+		    
+			</div>
+    		
+    	</div>
 	    <div class="col s4">
-	    	<svg width="300px" height="90px">
-	    	<defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-      <stop offset="50%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-      <stop offset="100%" style="stop-color:rgb(0,255,0);stop-opacity:1" />
-      
-    </linearGradient>
-  </defs>
-			  <path d="m 15.5 66 a 4.5 4.5 0 0 0 9 0" fill="red" />
+	    	
 
-			  <path d="m 100.5 66 a 4.5 4.5 0 0 0 9 0" fill="#00FF00" />
-			  <path d="m 20 66 a 42.5 42.5 0 0 1 85 0" fill="none" stroke="url(#grad1)" stroke-width="9" />
-			  <path id="needle" d="m 50 60 a 13.5 17 0 1 0 27 0 l -13.5 -73 z" fill="#000" stroke="whitesmoke" stroke-width="9"/>
-			</svg>
-			<h4 style="margin-top:-20px; margin-left:35px;">87%</h4>
+
+			     <div class="row">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+              	
+					<svg width="300px" height="90px">
+			    	  <defs>
+					    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+					    <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+					      <stop offset="50%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+					      <stop offset="100%" style="stop-color:rgb(0,255,0);stop-opacity:1" />
+					      
+					    </linearGradient>
+					  </defs>
+					  <path d="m 15.5 66 a 4.5 4.5 0 0 0 9 0" fill="red" />
+
+					  <path d="m 100.5 66 a 4.5 4.5 0 0 0 9 0" fill="#00FF00" />
+					  <path d="m 20 66 a 42.5 42.5 0 0 1 85 0" fill="none" stroke="url(#grad1)" stroke-width="9" />
+					  <path id="needle" d="m 50 60 a 13.5 17 0 1 0 27 0 l -13.5 -73 z" fill="#000" stroke="#546e7a" stroke-width="9"/>
+					</svg>
+					<h4 style="margin-top:-20px; margin-left:35px;">43%</h4>
+
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
 		</div>
 
   </div>

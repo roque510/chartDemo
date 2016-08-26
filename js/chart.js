@@ -4,6 +4,7 @@ var ctxb = document.getElementById("radar").getContext("2d");
 var ctxc = document.getElementById("pie").getContext("2d");
 var ctxd = document.getElementById("bar").getContext("2d");
 var ctxe = document.getElementById("doughnut").getContext("2d");
+var ctxf = document.getElementById("linear").getContext("2d");
 
 
 ctxa.canvas.height = 300;
@@ -12,6 +13,7 @@ ctx.canvas.height = 300;
 ctxc.canvas.height = 300;
 ctxd.canvas.height = 300;
 ctxe.canvas.height = 300;
+ctxf.canvas.height = 300;
 
 
 
@@ -38,7 +40,7 @@ var myChart = new Chart(ctx, {
                 y: 10
             }]
         },{
-        	backgroundColor: 'rgba(54, 162, 43, 0.2)',
+            backgroundColor: 'rgba(54, 162, 43, 0.2)',
             label: '2016',
             data: [{
                 x: 1,
@@ -60,10 +62,78 @@ var myChart = new Chart(ctx, {
         
     },
     options: {
-    	maintainAspectRatio: false,
+        maintainAspectRatio: false,
         scales: {
             xAxes: [{
                 type: 'linear',
+                position: 'bottom'
+            }]
+        }
+    }
+});
+
+var myChart = new Chart(ctxf, {
+    type: 'line',
+    data: {
+        datasets: [{
+            pointBorderWidth: 2,
+            pointRadius: 10,
+            backgroundColor: 'rgba(54, 162, 43, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            label: 'Utilidad Neta',
+            data: [{
+                x: 0,
+                y:7
+            }, {
+                x: 3,
+                y: 8
+            }, {
+                x: 5,
+                y: 5
+            }, {
+                x: 7,
+                y: 8
+            }, {
+                x: 10,
+                y: 10
+            }]
+        },{
+            pointBorderWidth: 2,
+            pointRadius: 10,
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)',
+            label: 'MB',
+            data: [{
+                x: 0,
+                y: 6
+            }, {
+                x: 5,
+                y: 5
+            }, {
+                x: 7,
+                y: 9
+            }, {
+                x: 9,
+                y: 5
+            }, {
+                x: 10,
+                y: 8
+            }]
+        }]
+        
+    },
+
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }],
+            xAxes: [{
+                type: 'linear',
+
                 position: 'bottom'
             }]
         }
