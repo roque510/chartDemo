@@ -167,8 +167,8 @@
 					  <path d="m 20 66 a 42.5 42.5 0 0 1 85 0" fill="none" stroke="url(#grad1)" stroke-width="9" />
 					  <path id="needle" d="m 50 60 a 13.5 17 0 1 0 27 0 l -13.5 -73 z" fill="#000" stroke="#546e7a" stroke-width="9"/>
 					</svg>
-					<h4 style="margin-top:-20px; margin-left:35px;">43%</h4>
-
+					<h4 style="margin-top:-20px; margin-left:35px;">60%</h4>
+				Positivo
               </span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>

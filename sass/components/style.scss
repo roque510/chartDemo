@@ -42,9 +42,9 @@ svg {
 
 #needle {
   position: relative;
-  transform: rotate(-12.6deg);
+  transform: rotate(18deg);
   transform-origin: 63px 66px;
-  -webkit-transform: rotate(-12.6deg); // (deg *180 / 100) -90
+  -webkit-transform: rotate(18.6deg); // (deg *180 / 100) -90
   -webkit-transform-origin: 63px 66px;
   
 }

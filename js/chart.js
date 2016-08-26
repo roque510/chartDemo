@@ -72,69 +72,64 @@ var myChart = new Chart(ctx, {
     }
 });
 
-var myChart = new Chart(ctxf, {
-    type: 'line',
-    data: {
-        datasets: [{
-            pointBorderWidth: 2,
-            pointRadius: 10,
-            backgroundColor: 'rgba(54, 162, 43, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            label: 'Utilidad Neta',
-            data: [{
-                x: 0,
-                y:7
-            }, {
-                x: 3,
-                y: 8
-            }, {
-                x: 5,
-                y: 5
-            }, {
-                x: 7,
-                y: 8
-            }, {
-                x: 10,
-                y: 10
-            }]
-        },{
-            pointBorderWidth: 2,
-            pointRadius: 10,
-            backgroundColor: 'rgba(255, 206, 86, 0.2)',
-            borderColor: 'rgba(255, 206, 86, 1)',
-            label: 'MB',
-            data: [{
-                x: 0,
-                y: 6
-            }, {
-                x: 5,
-                y: 5
-            }, {
-                x: 7,
-                y: 9
-            }, {
-                x: 9,
-                y: 5
-            }, {
-                x: 10,
-                y: 8
-            }]
-        }]
-        
-    },
+var data = {
+    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"],
+    datasets: [
+        {
+            label: "2016",
+            fill: true,
+            lineTension: 0.1,
+            backgroundColor: "rgba(75,192,192,0.4)",
+            borderColor: "rgba(75,192,192,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(75,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [65, 59, 80, 81, 56, 55, 40],
+            spanGaps: false,
+        },
+        {
+            label: "2017",
+            fill: true,
+            lineTension: 0.1,
+            backgroundColor: "rgba(35,9,192,0.4)",
+            borderColor: "rgba(35,9,192,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(75,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [25, 34, 50, 71, 49, 45, 100],
+            spanGaps: false,
+        }
+    ]
+};
 
+var myLineChart = new Chart(ctxf, {
+    type: 'line',
+    data: data,
     options: {
         maintainAspectRatio: false,
         scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }],
             xAxes: [{
-                type: 'linear',
-
-                position: 'bottom'
+                display: true
             }]
         }
     }
