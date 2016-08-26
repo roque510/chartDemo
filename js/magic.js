@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 	var ctxa =$( "#myChart" );
 
-var $test = $( "#woot" );
+var $test = $( ".updateChart" );
  
 function handler1() {
- console.log( "handler1" );
+ window.ctxa.update();
 }
  
 function handler2() {

@@ -1,28 +1,86 @@
-.page-footeraa, body {
-  padding-left: 200px; }
+.breadcrumb {
+  color: black; }
 
-#burger {
-  display: none; }
+.chart-gauge {
+  width: 400px;
+  margin: 10px auto; }
 
-@media only screen and (max-width: 992px) {
-  .page-footeraa, body {
-    padding-left: 0; }
+.chart-color1 {
+  fill: #DEA82C; }
 
-  #burger {
-    display: block; } }
-#slide-out {
-  width: 200px; }
+.chart-color2 {
+  fill: #E9621A; }
+
+.chart-color3 {
+  fill: #e92213; }
+
+.needle,
+.needle-center {
+  fill: #464A4F; }
+
+.prose {
+  text-align: center;
+  font-family: sans-serif;
+  color: #ababab; }
+
+svg {
+  margin: 20px 0 0 0;
+  background: transparent; }
+
+.border-obj {
+  border: 2px solid black;
+  margin: 10px 10px 10px 10px; }
+
+#needle {
+  position: relative;
+  transform: rotate(-12.6deg);
+  transform-origin: 63px 66px;
+  -webkit-transform: rotate(-12.6deg);
+  -webkit-transform-origin: 63px 66px; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid green; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #f00; }
 
 .background {
   max-width: 100%;
   max-height: 100%;
   margin: auto; }
 
+.perfilimg {
+  margin-top: -200px; }
+
+.perfilimghor {
+  top: 0;
+  margin-top: -300px; }
+
+.name {
+  margin-top: 100px;
+  color: black; }
+
 .userView {
   color: black;
   text-shadow: 0.1em 0.2em 0.1em solid grey; }
 
-.controllerB {
-  margin-left: -200px !important; }
+.parent {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.bar {
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0; }
 
 /*# sourceMappingURL=style.css.map */
