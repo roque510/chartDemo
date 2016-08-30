@@ -1,6 +1,6 @@
 <?php
 require_once('medoo.php');
-GLOBAL $SVR,$USR,$PW,$DB;
+GLOBAL $SVR,$USR,$PW,$DB,$database;
 
 $DB= "charts";
 $SVR = "localhost";

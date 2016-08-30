@@ -192,6 +192,15 @@ var line = new Chart(ctxb, {
     },
     responsive: false,
     options: {
+        legend: {
+            display: true,
+            labels: {
+                fontColor: 'rgb(255, 99, 132)'
+            },
+            title: {
+                fontColor: 'rgb(255, 99, 132)'
+            }
+        },
     	maintainAspectRatio: false,
         scales: {
             yAxes: [{

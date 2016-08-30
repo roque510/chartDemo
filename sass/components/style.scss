@@ -2,6 +2,24 @@
 	color:black;
 }
 
+.highlight:hover{
+	color:lightgrey;
+}
+
+.settings:hover{
+	cursor:pointer;
+
+}
+
+.header-highlight:hover{
+	color:grey !important;
+}
+
+.bodyBack, .bd_clr, .lastBack{
+	background-color:grey;
+	color:black;
+}
+
 .chart-gauge {
   width: 400px;
   margin: 10px auto;

@@ -30,6 +30,10 @@ $nivel = $database->get("usuarios", "Nivel", [
 	"Usuario" => $alias
 ]);
 
+$status = $database->get("usuarios", "Status", [
+	"Usuario" => $alias
+]);
+
 $uid = $database->get("usuarios", "idUsuario", [
 	"Usuario" => $alias
 ]);
@@ -50,6 +54,7 @@ if ($database->has("usuarios", [
 	$_SESSION['nivel'] = $nivel;
 	$_SESSION['usr'] = $alias;
 	$_SESSION['uid'] = $uid;
+	setcookie("Status",$status,time()+31556926 ,'/');
 
 	$arr = array ('response'=>'correcto','user'=> $alias, 'comment'=>$nivel);
 	echo json_encode($arr);

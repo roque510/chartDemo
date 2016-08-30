@@ -6338,8 +6338,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .header-highlight:hover {
   color: grey !important; }
 
-body {
-  background-color: whitesmoke; }
+.bodyBack, .bd_clr, .lastBack {
+  background-color: grey;
+  color: black; }
 
 .chart-gauge {
   width: 400px;
@@ -6423,4 +6424,4 @@ svg {
   right: 0;
   top: 0; }
 
-/*# sourceMappingURL=materialize.css.map */
+/*# sourceMappingURL=materializeDark.css.map */

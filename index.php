@@ -13,13 +13,25 @@ session_destroy();*/
 
   ?>
   <!DOCTYPE html>
-  <html>
+  <html class="lastBack">
     <head>
     <meta charset="UTF-8">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <?php
+      if(isset($_COOKIE['Status'])){
+        if ($_COOKIE['Status'] == 1) {
+           echo '<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>';
+         }
+         else
+            echo '<link type="text/css" rel="stylesheet" href="css/materializeDark.css"  media="screen,projection"/>'; 
+      }else
+        echo '<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>';
+
+
+      ?>
+      
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -31,16 +43,8 @@ session_destroy();*/
       
 
     </head>
-    <?php
-      if ((!isset($_GET["mod"])) and (!isset($_SESSION['usr']))){      
-
-        echo '<body class="bd_clr" style ="background-color:whitesmoke;">';
-
-      }else
-      {
-        echo '<body class="bd_clr" style ="background-color:whitesmoke;">';
-      }
-    ?>
+    <body class="bd_clr" style ="">
+    
     <div id="response"></div>
 
   <!-- Modal Structure -->
@@ -140,6 +144,8 @@ session_destroy();*/
       }
 
 
+
+
       if(!isset($_SESSION['usr'])){
         modulo('login');
       }
@@ -157,7 +163,7 @@ session_destroy();*/
 
       
         if (file_exists ("Modulos/".$page.".modulo.php")) {
-          modulo($page);
+          modulo($page,"bodyBack");
         }
         else{
           modulo('error');

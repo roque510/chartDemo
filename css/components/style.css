@@ -1,6 +1,19 @@
 .breadcrumb {
   color: black; }
 
+.highlight:hover {
+  color: lightgrey; }
+
+.settings:hover {
+  cursor: pointer; }
+
+.header-highlight:hover {
+  color: grey !important; }
+
+.bodyBack, .bd_clr, .lastBack {
+  background-color: grey;
+  color: black; }
+
 .chart-gauge {
   width: 400px;
   margin: 10px auto; }
@@ -33,9 +46,9 @@ svg {
 
 #needle {
   position: relative;
-  transform: rotate(-12.6deg);
+  transform: rotate(18deg);
   transform-origin: 63px 66px;
-  -webkit-transform: rotate(-12.6deg);
+  -webkit-transform: rotate(18.6deg);
   -webkit-transform-origin: 63px 66px; }
 
 .arrow-up {

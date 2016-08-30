@@ -9,11 +9,18 @@ function handler1() {
 }
  
 function handler2() {
-  console.log( "handler2" );
+  document.cookie = "Status=2;";
+}
+
+function handler3() {
+  document.cookie = "Status=1;";
 }
  
 $test.on( "click", handler1 );
 
+
+$( "#dark" ).on( "click", handler2 );
+$( "#light" ).on( "click", handler3 );
 
 $('#login').on('submit', function (e) {
 
